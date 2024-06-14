@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <style>
+        body{
+            background-image: url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg');
+             background-size: cover;
+        }
+    </style>
+ 
+</head>
+<body>
+    {{>nav}}
+<div class="bz">
+    {{!-- <h1>Sign up</h1> --}}
+    {{!-- <form action="/signup " method="post">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="name" placeholder="Last Name">
+    <input type="number" name="name" placeholder="mobile">
+     <input type="password" name="password" placeholder="Password">
+     <input type="submit"> --}}
+    
+     {{!-- </form></div> --}}
+      <div class="form-container">
+        <form action="/signup" method="POST">
+            <h2>Sign Up</h2>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstname" required>
+            
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required  placeholder="123-456-7890">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

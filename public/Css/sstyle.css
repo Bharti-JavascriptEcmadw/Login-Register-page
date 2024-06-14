@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+
+}
+
+.container{
+    /* height: 100vh; */
+    max-width: 100vw;
+    background-image: url(" https://i.gifer.com/IxI.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+.main{
+    width: 400px;
+    height: 500px;
+    /* border: 1px solid black; */
+    background-color: rgba(0, 0,0, 0.5);
+    box-shadow: 5px 5px 10px white;padding: 10px;
+
+}
+#search{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: powderblue;
+}
+
+.imgg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+img{
+width: 200px;border-radius:90px;
+}
+.section h1{
+    text-align: center;
+         font-size: 50px;
+         color:white
+}
+.wind, p{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(220, 216, 9);
+    padding: 10px;
+}
+p{
+    font-family: cursive;
+}

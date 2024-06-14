@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to your CSS file -->
+      <style>
+        body{
+            background-image: url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg');
+             background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    {{>nav}}
+    <div class="form-container">
+        <form action="/login" method="POST">
+            <h2>Login</h2>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button></form>
+        {{!-- </form><a href="/m">Create An account</a> --}}
+    </div>
+    
+</body>
+</html>
